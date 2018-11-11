@@ -1,0 +1,14 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+#p2choice {
+    color: salmon;
+}
+
+input [type="button"], input [type="reset"], input [type="submit"] {
+    color: white;
+    background-color: salmon;
+    font-size: 30px;
+}
