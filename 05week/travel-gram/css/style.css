@@ -1,1 +1,377 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
 
+.headerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0 10px;
+}
+
+.headerHam {
+    color: hsl(6, 93%, 31%);
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+h2::after {
+    content: 'Fat Ham View';
+}
+
+.box {
+    background-color: antiquewhite;
+    border: 1px solid hsl(180, 0%, 25%);
+    border-bottom: 3px solid hsl(180, 0%, 25%);
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photo {
+    color: whitesmoke;
+    font-size: 40px;
+    background-color: bisque;
+    border: 1px solid hsl(180, 0%, 25%);
+    margin: 10px 10px 0 10px;
+    min-height: 140px;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxContent {
+    margin: 10px 10px 0 10px;
+}
+
+p.tgPostText {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+hr {
+    border: none;
+    background-color: hsl(180, 0%, 25%);
+    color: hsl(180, 0%, 25%);
+    height: 1px;
+}
+
+button.indicator {
+    width: 18px;
+    height: 100%;
+    background-color: salmon;
+    border: 1px solid hsl(180, 0%, 25%);
+    border-radius: 50%;
+    margin: none;
+}
+
+button.mainBtn {
+    width: 50%;
+    background-color: salmon;
+    border: 1px solid hsl(180, 0%, 25%);
+    border-radius: 3px;
+    margin: none;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.indicatorAndButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* photo links */
+.photo1 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/4b46e728b1d0e0251bef325059336039/5C6E6728/t51.2885-15/fr/e15/s1080x1080/41677718_325192704914084_7264522872052955310_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo2 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/4653a5f1411b18fe68b3732d60278014/5C8847E3/t51.2885-15/e35/43198055_353579761882799_4515726511494096676_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo3 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/2efe66986c665989ed55100ed8269b3e/5C811081/t51.2885-15/e35/25022431_136971613656876_6857332346568310784_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo4 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/464bfa452a8b1740c49d590cd5dfbab5/5C83F800/t51.2885-15/e35/43594730_845671185823945_2169276982242436465_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo5 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/e5274cc6a1c3fe945cda0a2945e98dd4/5C83EBEC/t51.2885-15/e35/43984676_246097286063508_6074481803001040139_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo6 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/a4054e290a5d1dc4005bbb149a6cdae1/5C6A6426/t51.2885-15/e35/37021893_1118719858304983_1947951669429927936_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo7 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/f7b5ea3c9cbb052aa2f6ddd2c887c738/5C684FC6/t51.2885-15/e35/37869708_645619245812473_6695459264019824640_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo8 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/102acd01674b544bf1df1cc5e4210840/5C64B455/t51.2885-15/e35/37259413_430511630778542_4478569412667899904_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo9 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/576dc9ba7288dd8edbc78377f1872767/5C6B2643/t51.2885-15/e35/36899295_669936123358670_2215362801499635712_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo10 {
+    background-image: url("https://scontent-iad3-1.cdninstagram.com/vp/a2b77ba85fcd9a57850112deddf5fed5/5C7F1567/t51.2885-15/e35/28436439_197069754382920_6451949951369871360_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* layout styles */
+.box1 {
+    grid-area: box1;
+    display: flex;
+    flex-direction: row;
+}
+
+.box2 {
+    grid-area: box2;
+    display: flex;
+    flex-direction: row;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+    display: flex;
+    flex-direction: row;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+.grid {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "box1 box1 box2 box2"
+        "box3 box3 box4 box5"
+        "box3 box3 box6 box6"
+        "box7 box8 box9 box10"
+    ;
+}
+
+/* tablet styles */
+@media (max-width: 768px) {
+
+h2::after {
+    content: 'Medium Ham View';
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 {
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box3 {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+}
+
+.box4 {
+    grid-area: box4;
+    display: flex;
+    flex-direction: row;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+    display: flex;
+    flex-direction: column;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "box3 box3"
+        "box1 box2"
+        "box4 box4"
+        "box5 box6"
+        "box7 box7"
+        "box8 box9"
+        "box10 box10"
+    ;
+}
+
+}
+
+/* phone styles */
+@media (max-width: 576px) {
+
+h2::after {
+    content: 'Little Hamlet View';
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 {
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box3 {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+}
+
+.box4 {
+    grid-area: box4;
+    display: flex;
+    flex-direction: column;
+}
+
+.box5 {
+    grid-area: box5;
+    display: flex;
+    flex-direction: column;
+}
+
+.box6 {
+    grid-area: box6;
+    display: flex;
+    flex-direction: column;
+}
+
+.box7 {
+    grid-area: box7;
+    display: flex;
+    flex-direction: column;
+}
+
+.box8 {
+    grid-area: box8;
+    display: flex;
+    flex-direction: column;
+}
+
+.box9 {
+    grid-area: box9;
+    display: flex;
+    flex-direction: column;
+}
+
+.box10 {
+    grid-area: box10;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+    ;
+}
+
+}
