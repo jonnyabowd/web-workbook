@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function() {
-
+  alert("You have 4 items in your shopping cart.");
   // call these functions on DOM load
   initialItemCount();
   createNewAddField();
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // ADD initial h2 with cart count
 function initialItemCount(){
-  let count = document.getElementsByTagName('ul');
   let newh2 = document.createElement("h2");
   newh2.setAttribute('id', 'cart-count');
   document.getElementById("title").appendChild(newh2);
