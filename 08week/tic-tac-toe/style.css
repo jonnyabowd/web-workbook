@@ -1,10 +1,39 @@
+html, body {
+  margin: 0;
+  background-color: antiquewhite;
+  font-family: 'Original Surfer', sans-serif;
+  color: #380000;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 10px solid salmon;
+  border-right: 10px solid salmon;
+  border-bottom: 10px solid salmon;
+  border-left: 10px solid salmon;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 div[data-cell] {
   width: 100px;
   height: 100px;
   background-color: #f2f2f2;
   float: left;
-  border: 1px solid #808080;
-  font-size: 100px;
+  border: 4px solid salmon;
+  box-sizing: border-box;
+  font-size: 80px;
   text-align: center;
 }
 
@@ -15,4 +44,22 @@ div[data-cell] {
 #announce-winner {
   clear: both;
   font-size: 50px;
+  line-height: 80px;
+}
+
+button {
+  font-size:24px;
+  font-family: 'Original Surfer', sans-serif;
+  color: #380000;
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 4px solid salmon;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background: #f2f2f2;
 }
