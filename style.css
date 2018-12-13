@@ -13,6 +13,7 @@ body, html {
 
 .hero {
     border: 1px solid #7ec1dd;
+    box-sizing: border-box;
     width: 100%;
     padding: 0px;
     margin-top: 20px;
@@ -29,6 +30,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 800px;
+    box-sizing: border-box;
     border-left: 1px solid #7ec1dd;
     border-right: 1px solid #7ec1dd;
     border-bottom: 1px solid #7ec1dd;
