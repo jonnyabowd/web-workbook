@@ -1,0 +1,98 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background: antiquewhite;
+    background: url('bkgd-pttn.png') repeat 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    align-self: center;
+    position: relative;
+    height: 400px;
+    width: 90%;
+    /* box-sizing: border-box; */
+    max-width: 800px;
+    border-right: 10px solid hsl(40, 100%,60%);
+    border-bottom: 10px solid hsl(40, 100%,60%);
+    border-left: 10px solid hsl(40, 100%,60%);
+    background-color: aliceblue;
+    background: url('tilesetOpenGameBackground.png') repeat 0 0;
+    background-size: contain;
+    /* background-repeat: repeat-x; */
+    overflow: hidden;
+    animation: slide 20s linear infinite;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    from {background-position: 0 0;}
+    /* this 'to' position should be the width of the bkgd image when scaled to fit the 400px high container */
+    to {background-position: -500px 0;}
+}
+
+@-webkit-keyframes slide {
+    from {background-position: 0 0;}
+    /* this 'to' position should be the width of the bkgd image when scaled to fit the 400px high container */
+    to {background-position: -500px 0;}
+}
+
+#turd {
+    position: absolute;
+    background: url('bird.gif');
+    height: 42px;
+    width: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 15%;
+}
+
+.tp {
+    position: absolute;
+    height: 130px;
+    width: 50px;
+    background-color: green;
+    right: -50px;
+}
+
+#tp_1 {
+    top: 0;
+    border-bottom: 6px solid darkgreen;
+}
+
+#tp_2 {
+    bottom: 0;
+    border-bottom: 6px solid darkgreen;
+}
+
+#score_div {
+    text-align: center;
+    font-size: 40px;
+    color: hsl(300, 100%, 27%);
+}
+
+span {
+    color: hsl(300, 100%, 47%);
+}
+
+#restart_btn {
+    font-family: 'Press Start 2P', sans-serif;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: red;
+    border-top: none;
+    border-right: none;
+    border-bottom: 6px solid hsl(0, 100%, 40%);
+    border-left: none;
+    color: white;
+    font-size: 35px;
+    /* border: none; */
+    cursor: pointer;
+    display: none;
+}
