@@ -35,12 +35,12 @@ function createNewAddField(){
   newinput.setAttribute("id", 'item-text');
   document.getElementsByTagName('ul')[0].after(newinput);
   var inputField = document.getElementById('item-text');
-  inputField.setAttribute("placeholder", "Add your shit here");
+  inputField.setAttribute("placeholder", "Add your crap here");
 
   let newbutton = document.createElement('button');
   newbutton.setAttribute("id", 'add-button');
   document.getElementById('item-text').after(newbutton);
-  newbutton.innerHTML = 'add this shit';
+  newbutton.innerHTML = 'add this crap';
   newbutton.onclick = addItemToList;
 }
 
@@ -58,7 +58,7 @@ function addItemToList(){
 function addRemoveBtn(appendElement){
   let removebutton = document.createElement('button');
   removebutton.setAttribute('id', 'remove-button');
-  removebutton.innerHTML = 'Remove this shit';
+  removebutton.innerHTML = 'Remove this crap';
   appendElement.appendChild(removebutton);
   removebutton.onclick = deleteItem;
   // run UPDATE h2 function

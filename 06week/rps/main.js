@@ -1,5 +1,5 @@
-var p1 = prompt("What say you Player 1? Rock, paper, or sissor?");
-var p2 = prompt("What say you Player 2? Rock, paper, or sissor?");
+var p1 = prompt("What say you Player 1? Rock, paper, or scissor?");
+var p2 = prompt("What say you Player 2? Rock, paper, or scissor?");
 
 document.write("Player 1 chooses: " + p1 + ". ");
 document.write("Player 2 chooses: " + p2 + ".");

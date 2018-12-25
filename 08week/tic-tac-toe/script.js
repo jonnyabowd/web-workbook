@@ -37,7 +37,7 @@ $(document).ready(function() {
     var oCount = $("[data-cell]:Contains('O')").length;
     
     if (pooCount + oCount === 9){
-      $('#announce-winner').text(`LOOSERS!`);    
+      $('#announce-winner').text(`LOSERS!`);    
     }    
     
     // row conditions
